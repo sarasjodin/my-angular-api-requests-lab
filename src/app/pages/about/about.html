@@ -1,30 +1,33 @@
 <div class="about-page">
   <h2>About this site</h2>
   <p>
-    This site builds on my previous JavaScript, TypeScript and frontend
-    develpment experiences.
+    This site is part of a frontend development lab focused on Angular 20, RxJS,
+    and working with external data sources.
   </p>
   <p>
-    It is built using Angular 20 and demonstrates several core concepts such as
-    components, data binding, routing, and responsive design. It consists of
-    four main pages
+    The application fetches a course schedule (ramschema) from an external API.
+    If the remote source is unavailable, it automatically falls back to a local
+    JSON file stored in the public folder.
   </p>
+  <p>It demonstrates several core Angular concepts including:</p>
   <ul>
-    <li>a home page,</li>
-    <li>a calculator page,</li>
-    <li>a unit converter page,</li>
-    <li>and this project description page</li>
+    <li>Standalone components</li>
+    <li>HTTP requests using HttpClient with RxJS</li>
+    <li>Data binding with signals</li>
+    <li>Filtering and sorting in real-time</li>
+    <li>Responsive table layout with accessibility in mind</li>
   </ul>
   <p>
-    The site includes a fully functional navigation system using Angular Router,
-    and all styling is done with structured CSS at both global and component
-    levels.
+    The table view allows users to search for courses by name or code, sort by
+    any column (ascending, descending, or reset), and view syllabus links for
+    each course.
   </p>
   <p>
-    One component is also reused within the pages to demonstrate modular design.
-    The project is version-controlled with Git, hosted on GitHub, and published
-    on a public web host.
+    The project is fully version-controlled with Git, hosted on GitHub, and
+    published on a public web host. Styling is done using SCSS at both component
+    and global levels.
   </p>
+
   <div class="image-wrapper">
     <div class="img-container">
       <picture>
@@ -49,9 +52,18 @@
   <p>
     I'm a developer with a long-time interest in modern fullstack web
     development. This project gave me hands-on experience with Angular’s
-    component-based structure, routing system, and styling organization. I enjoy
-    building responsive and functional web interfaces, and I'm continuously
-    learning how to write clean, maintainable code and use tools like Git and
-    GitHub to manage development workflows.
+    reactive data flow using signals, real-time data binding, and error-handling
+    strategies with RxJS.
+  </p>
+  <p>
+    I also explored standalone component architecture, service-based API
+    integration, and fallback logic. The implementation
+    of sorting and filtering on live data helped reinforce my understanding of
+    state management within Angular applications.
+  </p>
+  <p>
+    Through this lab, I gained deeper insight into building maintainable and
+    user-friendly interfaces while keeping performance and responsiveness in
+    mind.
   </p>
 </div>

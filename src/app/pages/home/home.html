@@ -3,8 +3,15 @@
  Binds the input field to a property named filterValue in the component
  When the user types the value is updated in real time
  applyFilter gets called every time the user types something-->
-<input [(ngModel)]="filterValue" (input)="applyFilter()" />
-
+<label for="filter">Search courses </label>
+<div class="input-wrapper">
+  <input
+    class="custom-input"
+    id="filter"
+    [(ngModel)]="filterValue"
+    (input)="applyFilter()"
+  />
+</div>
 <!-- A reusable app-course-table with the following content:
 Passes a filtered list of courses (filteredCourses) into the table
 Tell the table how the data is currently being sorted (by column and direction)

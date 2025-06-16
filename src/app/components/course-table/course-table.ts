@@ -29,11 +29,11 @@ export class CourseTable {
 
   // This method returns a icon as a string to show next to a column header based on the sort state
   getSortIcon(column: keyof CourseModel): string {
-    if (this.sortKey !== column) return '→';
+    if (this.sortKey !== column) return ' ▶️';
     return this.sortDirection === 'asc'
-      ? '↑'
+      ? ' 🔼'
       : this.sortDirection === 'desc'
-      ? '↓'
-      : '→';
+      ? ' 🔽'
+      : ' ▶️';
   }
 }

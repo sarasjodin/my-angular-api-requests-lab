@@ -8,8 +8,13 @@
         <span class="wrap-heading">Course name</span> {{
         getSortIcon('coursename') }}
       </th>
-      <th (click)="setSort('progression')">
+      <th class="full-name" (click)="setSort('progression')">
         <span class="wrap-heading">Progres<wbr />sion</span> {{
+        getSortIcon('progression') }}
+      </th>
+
+      <th class="short-name" (click)="setSort('progression')">
+        <span class="wrap-heading">A/<wbr />B</span> {{
         getSortIcon('progression') }}
       </th>
     </tr>

@@ -1,8 +1,47 @@
-@media (max-width: 600px) {
-  .wrap-heading {
-    word-break: break-word;
-    white-space: normal;
-    hyphens: auto;
-    display: inline-block;
+tr,
+td {
+  line-height: 1.6;
+  font-size: larger;
+}
+
+th:nth-child(1),
+th:nth-child(2) td:nth-child(1),
+td:nth-child(2) {
+  padding-right: 1rem;
+}
+
+.wrap-heading {
+  word-break: break-word;
+  white-space: normal;
+  hyphens: auto;
+  display: inline-block;
+}
+
+.full-name {
+  display: none;
+}
+
+.short-name {
+  display: inline;
+}
+
+@media screen and (min-width: 650px) {
+  nav {
+    display: flex;
+    width: 600px;
+    max-width: 600px;
+    border-top: 1px solid #eee;
+  }
+
+  .main-nav {
+    width: 600px;
+  }
+
+  .full-name {
+    display: inline;
+  }
+
+  .short-name {
+    display: none;
   }
 }
