@@ -7,7 +7,7 @@ import { CourseModel } from '../interfaces/course-model';
   providedIn: 'root',
 })
 export class CourseService {
-  private remoteUrl = 'https://webbutveckling.miun.se/files/ramschema2.json';
+  private remoteUrl = 'https://webbutveckling.miun.se/files/ramschema.json';
   private localUrl = '/ramschema.json'; // filen ska ligga i public/
 
   constructor(private http: HttpClient) {}
