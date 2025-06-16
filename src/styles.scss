@@ -1,1 +1,178 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --red-to-pink-to-purple-horizontal-gradient: linear-gradient(
+    to right,
+    #dd0031,
+    #e91e63,
+    #9c27b0
+  );
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+app-root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+main {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  box-sizing: inherit;
+  position: relative;
+}
+
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1em;
+}
+
+.btn {
+  padding: 0.5em 1em;
+  font-size: 0.9rem;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pill-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  font-size: 0.9rem;
+  padding: 0.5em 1.2em;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 500;
+  border: none;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.pill-link.blue {
+  color: #0364c6;
+  background-color: rgba(25, 118, 210, 0.07);
+}
+.pill-link.blue:hover {
+  color: #0252a2;
+  background-color: rgba(25, 118, 210, 0.15);
+}
+
+/* Röd */
+.pill-link.red {
+  color: #b50027;
+  background-color: rgba(221, 0, 49, 0.07);
+}
+.pill-link.red:hover {
+  color: #9c0425;
+  background-color: rgba(221, 0, 49, 0.15);
+}
+
+/* Lila */
+.pill-link.purple {
+  color: #8f02a8;
+  background-color: rgba(156, 39, 176, 0.07);
+}
+.pill-link.purple:hover {
+  color: #720086;
+  background-color: rgba(156, 39, 176, 0.15);
+}
+
+/* Orange */
+.pill-link.orange {
+  color: #fb7d00;
+  background-color: rgba(251, 142, 0, 0.07);
+}
+.pill-link.orange:hover {
+  color: #fb5800;
+  background-color: rgba(251, 142, 0, 0.15);
+}
+
+/* Green */
+.pill-link.green {
+  color: #1b8520;
+  background-color: rgba(0, 251, 54, 0.07);
+}
+.pill-link.green:hover {
+  color: #0c6211;
+  background-color: rgba(0, 251, 54, 0.15);
+}
+
+/* Ikon */
+.pill-link .icon {
+  font-size: 0.9em;
+  display: inline-block;
+}
+
+h1 {
+  font-size: 3.125rem;
+  color: var(--gray-900);
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: -0.125rem;
+  margin: 0;
+  font-family: "Inter Tight", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+}
+
+app-converter,
+app-calculator {
+  display: block;
+  margin: 1rem;
+}
+
+h2,
+h3 {
+  color: var(--gray-900);
+  font-weight: 500;
+  line-height: 200%;
+  letter-spacing: -0.125rem;
+  margin: 0;
+  font-family: "Inter Tight", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+}
+
+.divider {
+  height: 1px;
+  width: 100%;
+  background: var(--red-to-pink-to-purple-horizontal-gradient);
+  margin-block: 1.5rem;
+}
+
+header {
+  display: flex;
+}
+
+.nav {
+  display: flex;
+  max-width: 650px;
+}
+
+@media screen and (min-width: 650px) {
+  header {
+    display: flex;
+  }
+  .nav {
+    display: flex;
+    width: 650px;
+  }
+}
+
+/* * {
+    outline: 1px solid red;
+  } */

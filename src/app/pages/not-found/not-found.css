@@ -1,0 +1,17 @@
+.not-found {
+    text-align: center;
+    padding: 4rem 2rem;
+  }
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  a {
+    font-size: 1rem;
+    text-decoration: underline;
+    color: #007bff;
+  }

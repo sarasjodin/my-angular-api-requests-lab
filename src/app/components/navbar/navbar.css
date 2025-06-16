@@ -1,0 +1,143 @@
+header {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem;
+  gap: 1rem;
+  width: 100vw;
+  max-width: 600px;
+}
+
+.full-name {
+  display: none;
+}
+
+.short-name {
+  display: inline;
+}
+
+.pill-link {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  font-weight: 500;
+  text-decoration: none;
+  border: 1px solid transparent;
+  transition: background-color 0.2s ease, color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.pill-link:focus {
+  outline: 2px solid #007acc;
+  outline-offset: 2px;
+}
+
+/* Purple theme */
+.pill-link.purple {
+  color: #8f02a8;
+  background-color: rgba(156, 39, 176, 0.07);
+}
+
+.pill-link.purple:hover,
+.pill-link.purple:focus {
+  color: #720086;
+  background-color: rgba(156, 39, 176, 0.15);
+}
+
+/* Active state via routerLinkActive */
+.pill-link.purple.active {
+  border-color: #720086;
+}
+
+/* Blue theme */
+/* Active state via routerLinkActive */
+.pill-link.blue.active {
+  border-color: #003a86;
+}
+
+/* Green theme */
+/* Active state via routerLinkActive */
+.pill-link.green.active {
+  border-color: #206800;
+}
+
+/* Red theme */
+/* Active state via routerLinkActive */
+.pill-link.red.active {
+  border-color: #7b0311;
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  width: 100vw;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #ccc;
+}
+
+.logo-link {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  text-decoration: none;
+}
+
+.site-logo {
+  height: 50px;
+  width: 50px;
+  margin-right: 0.75rem;
+}
+
+.site-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #111;
+}
+
+@media screen and (min-width: 390px) and (max-width: 650px) {
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
+    width: 100%;
+    max-width: 600px;
+  }
+  .main-nav {
+    width: 600px;
+  }
+  .full-name {
+    display: none;
+  }
+  .short-name {
+    display: inline;
+  }
+}
+@media screen and (min-width: 650px) {
+  nav {
+    display: flex;
+    width: 600px;
+    max-width: 600px;
+    border-top: 1px solid #eee;
+  }
+
+  .main-nav {
+    width: 600px;
+  }
+
+  .full-name {
+    display: inline;
+  }
+
+  .short-name {
+    display: none;
+  }
+}

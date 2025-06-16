@@ -1,0 +1,18 @@
+<h2>Course list</h2>
+<!-- This is a two-way data binding input field
+ Binds the input field to a property named filterValue in the component
+ When the user types the value is updated in real time
+ applyFilter gets called every time the user types something-->
+<input [(ngModel)]="filterValue" (input)="applyFilter()" />
+
+<!-- A reusable app-course-table with the following content:
+Passes a filtered list of courses (filteredCourses) into the table
+Tell the table how the data is currently being sorted (by column and direction)
+The table component can emit a sortRequest event, when a column header is clicked
+The parent listens to this and runs onSort($event) -->
+<app-course-table
+  [courses]="filteredCourses"
+  [sortKey]="sortKey"
+  [sortDirection]="sortDirection"
+  (sortRequest)="onSort($event)"
+></app-course-table>

@@ -1,0 +1,28 @@
+<table>
+  <thead>
+    <tr>
+      <th (click)="setSort('code')">
+        <span class="wrap-heading">Code</span> {{ getSortIcon('code') }}
+      </th>
+      <th (click)="setSort('coursename')">
+        <span class="wrap-heading">Course name</span> {{
+        getSortIcon('coursename') }}
+      </th>
+      <th (click)="setSort('progression')">
+        <span class="wrap-heading">Progres<wbr />sion</span> {{
+        getSortIcon('progression') }}
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let course of courses">
+      <td>{{ course.code }}</td>
+      <td>
+        <a [href]="course.syllabus" target="_blank" rel="noopener">
+          {{ course.coursename }}
+        </a>
+      </td>
+      <td>{{ course.progression }}</td>
+    </tr>
+  </tbody>
+</table>

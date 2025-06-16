@@ -1,0 +1,47 @@
+main {
+  flex: 1; /* Trycker ner footern till botten om innehållet är kort */
+  padding: 1rem 0;
+}
+
+footer {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: larger;
+  color: black;
+  justify-content: center;
+  background-color: #f5f5f5;
+  border-top: 1px solid #ccc;
+  width: 100vw;
+}
+
+.section {
+  background-color: #dbdbdb;
+  border-top: 1px solid #ccc;
+  font-size: medium;
+  width: 100vw;
+}
+
+div.section {
+  width: 100vw;
+}
+
+.copyright {
+  font-weight: 650;
+}
+
+.footer {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+div.footer > img {
+  width: 30px;
+  height: 30px;
+  margin-right: 0.6rem;
+}
