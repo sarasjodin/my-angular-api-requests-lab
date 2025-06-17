@@ -29,7 +29,7 @@ export class Home {
   }
 
   // Sorting parameters
-  sortKey: keyof CourseModel | null = null;
+  sortKey: keyof CourseModel | null = 'translatedName';
   sortDirection: 'asc' | 'desc' | null = null;
 
   /**
@@ -45,17 +45,17 @@ export class Home {
       this.sortKey = column;
       this.sortDirection = 'asc';
     } else {
-      if (this.sortDirection === 'asc') this.sortDirection = 'desc';
-      else if (this.sortDirection === 'desc') {
+      if (this.sortDirection === 'asc') {
+        this.sortDirection = 'desc';
+      } else if (this.sortDirection === 'desc') {
         this.sortKey = null;
         this.sortDirection = null;
-        return this.applyFilter();
       } else {
         this.sortDirection = 'asc';
       }
     }
 
-    this.applyFilter();
+    this.applyFilter(); //
   }
 
   /**
@@ -66,22 +66,23 @@ export class Home {
    */
   applyFilter(): void {
     const query = this.filterValue.toLowerCase();
+
     let result = this.courses.filter(
       (course: CourseModel) =>
         course.code.toLowerCase().includes(query) ||
-        course.coursename.toLowerCase().includes(query)
+        course.translatedName.toLowerCase().includes(query)
     );
 
     if (this.sortKey && this.sortDirection) {
-      result = result.sort((a: CourseModel, b: CourseModel) => {
-        const aVal = a[this.sortKey!] as string;
-        const bVal = b[this.sortKey!] as string;
+      result = result.sort((a, b) => {
+        const aVal = (a[this.sortKey!] ?? '').toString().toLowerCase();
+        const bVal = (b[this.sortKey!] ?? '').toString().toLowerCase();
         return this.sortDirection === 'asc'
           ? aVal.localeCompare(bVal)
           : bVal.localeCompare(aVal);
       });
     }
 
-    this.filteredCourses = result;
+    this.filteredCourses = result; // Sorted and filtered result
   }
 }

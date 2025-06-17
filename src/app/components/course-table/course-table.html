@@ -4,9 +4,9 @@
       <th (click)="setSort('code')" class="progression-header">
         <span class="wrap-heading">Code</span> {{ getSortIcon('code') }}
       </th>
-      <th (click)="setSort('coursename')" class="progression-header">
+      <th (click)="setSort('translatedName')" class="progression-header">
         <span class="wrap-heading">Course name</span> {{
-        getSortIcon('coursename') }}
+        getSortIcon('translatedName') }}
       </th>
       <th (click)="setSort('progression')" class="progression-header">
         <span class="full-name">Progres<wbr />sion</span>
@@ -20,7 +20,7 @@
       <td>{{ course.code }}</td>
       <td>
         <a [href]="course.syllabus" target="_blank" rel="noopener">
-          {{ course.coursename }}
+          {{ course.translatedName || course.coursename }}
         </a>
       </td>
       <td>{{ course.progression }}</td>
