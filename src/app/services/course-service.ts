@@ -8,17 +8,19 @@ import { CourseModel } from '../interfaces/course-model';
 })
 export class CourseService {
   private remoteUrl = 'https://webbutveckling.miun.se/files/ramschema.json';
-  private localUrl = '/ramschema.json'; // filen ska ligga i public/
+  private localUrl = '/ramschema.json';
 
   constructor(private http: HttpClient) {}
 
   getCourses(): Observable<CourseModel[]> {
+    // Remote url
     return this.http.get<CourseModel[]>(this.remoteUrl).pipe(
       catchError((error) => {
         console.warn(
-          'Extern URL kunde inte läsas – försöker lokal kopia.',
+          'External URL could not be read. Looking for a local copy.',
           error
         );
+        // Local json file
         return this.http.get<CourseModel[]>(this.localUrl);
       })
     );

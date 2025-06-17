@@ -13,13 +13,14 @@ import { CourseTable } from '../../components/course-table/course-table';
   templateUrl: './home.html',
   styleUrls: ['./home.scss'],
 })
-export class Home implements OnInit {
+export class Home {
   courses: CourseModel[] = [];
   filteredCourses: CourseModel[] = [];
   filterValue: string = '';
 
   constructor(private courseService: CourseService, private router: Router) {}
 
+  // The method ngOnInit() initiate the course table data. Collects in through HttpClient.
   ngOnInit() {
     this.courseService.getCourses().subscribe((courses) => {
       this.courses = courses;
@@ -27,9 +28,18 @@ export class Home implements OnInit {
     });
   }
 
+  // Sorting parameters
   sortKey: keyof CourseModel | null = null;
   sortDirection: 'asc' | 'desc' | null = null;
 
+  /**
+   * Handles sorting logic when a column header is clicked
+   * If a new column is selected, sorting is set to ascending order
+   * If the same column is clicked again, toggles between ascending and descending
+   * If clicked a third time, clears sorting entirely
+   * Triggers filtering and sorting logic by calling applyFilter().
+   * @param column - The key of the column (from CourseModel) to sort by.
+   */
   onSort(column: keyof CourseModel): void {
     if (this.sortKey !== column) {
       this.sortKey = column;
@@ -48,15 +58,12 @@ export class Home implements OnInit {
     this.applyFilter();
   }
 
-  getSortIcon(column: keyof CourseModel): string {
-    if (this.sortKey !== column) return '→';
-    return this.sortDirection === 'asc'
-      ? '↑'
-      : this.sortDirection === 'desc'
-      ? '↓'
-      : '→';
-  }
-
+  /**
+   * Applies the current text filter and sorting rules to the full course list
+   * Filters courses based on a text query (filterValue), matching either the course code or course name
+   * If a sort key and direction are set, sorts the filtered list accordingly
+   * The result is stored in filteredCourses
+   */
   applyFilter(): void {
     const query = this.filterValue.toLowerCase();
     let result = this.courses.filter(
@@ -76,9 +83,5 @@ export class Home implements OnInit {
     }
 
     this.filteredCourses = result;
-  }
-
-  navigateToCourseDetails(courseCode: string): void {
-    this.router.navigate(['/courses', courseCode]);
   }
 }

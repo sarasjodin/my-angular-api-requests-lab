@@ -11,5 +11,6 @@ import { Navbar } from './components/navbar/navbar';
 })
 export class App {
   protected title = 'my-angular-api-requests';
+  // Copyright year always updated
   currentYear: number = new Date().getFullYear();
 }
