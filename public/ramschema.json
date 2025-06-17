@@ -1,92 +1,107 @@
 [
-    {
-        "code": "dt057g",
-        "coursename": "Webbutveckling I",
-        "progression": "A",
-        "syllabus": "https://www.miun.se/utbildning/kursplaner-och-utbildningsplaner/DT057G/"
-    },
-    {
-        "code": "dt084g",
-        "coursename": "Introduktion till programmering i JavaScript",
-        "progression": "A",
-        "syllabus": "https://www.miun.se/utbildning/kursplaner-och-utbildningsplaner/DT084G/"
-    },
-    {
-        "code": "dt200g",
-        "coursename": "Grafisk teknik för webb",
-        "progression": "A",
-        "syllabus": "https://www.miun.se/utbildning/kursplaner-och-utbildningsplaner/DT200G/"
-    },
-    {
-        "code": "dt068g",
-        "coursename": "Webbanvändbarhet",
-        "progression": "B",
-        "syllabus": "https://www.miun.se/utbildning/kursplaner-och-utbildningsplaner/DT068G/"
-    },
-    {
-        "code": "dt003g",
-        "coursename": "Databaser",
-        "progression": "A",
-        "syllabus": "https://www.miun.se/utbildning/kursplaner-och-utbildningsplaner/DT003G/"
-    },
-    {
-        "code": "dt211g",
-        "coursename": "Frontend-baserad webbutveckling",
-        "progression": "B",
-        "syllabus": "https://www.miun.se/utbildning/kursplaner-och-utbildningsplaner/DT211G/"
-    },
-    {
-        "code": "dt207g",
-        "coursename": "Backend-baserad webbutveckling",
-        "progression": "B",
-        "syllabus": "https://www.miun.se/utbildning/kursplaner-och-utbildningsplaner/DT207G/"
-    },
-    {
-        "code": "dt208g",
-        "coursename": "Programmering i TypeScript",
-        "progression": "B",
-        "syllabus": "https://www.miun.se/utbildning/kursplaner-och-utbildningsplaner/DT208G/"
-    },
-    {
-        "code": "ik060g",
-        "coursename": "Projektledning",
-        "progression": "B",
-        "syllabus": "https://www.miun.se/utbildning/kursplaner-och-utbildningsplaner/IK060G/"
-    },
-    {
-        "code": "dt071g",
-        "coursename": "Programmering i C#.net",
-        "progression": "A",
-        "syllabus": "https://www.miun.se/utbildning/kursplaner-och-utbildningsplaner/DT071G/"
-    },
-    {
-        "code": "dt193g",
-        "coursename": "Fullstacks-utveckling med ramverk",
-        "progression": "B",
-        "syllabus": "https://www.miun.se/utbildning/kursplaner-och-utbildningsplaner/DT193G/"
-    },
-    {
-        "code": "dt209g",
-        "coursename": "Webbutveckling för WordPress",
-        "progression": "B",
-        "syllabus": "https://www.miun.se/utbildning/kursplaner-och-utbildningsplaner/DT209G/"
-    },    
-    {
-        "code": "dt191g",
-        "coursename": "Webbutveckling med .NET",
-        "progression": "B",
-        "syllabus": "https://www.miun.se/utbildning/kursplaner-och-utbildningsplaner/DT191G/"
-    },
-    {
-        "code": "dt210g",
-        "coursename": "Fördjupad frontend-utveckling",
-        "progression": "B",
-        "syllabus": "https://www.miun.se/utbildning/kursplaner-och-utbildningsplaner/DT210G/"
-    },
-    {
-        "code": "dt140g",
-        "coursename": "Självständigt arbete",
-        "progression": "B",
-        "syllabus": "https://www.miun.se/utbildning/kursplaner-och-utbildningsplaner/DT140G/"
-    }
+  {
+    "code": "dt057g",
+    "coursename": "Webbutveckling I",
+    "translatedName": "Web Development I",
+    "progression": "A",
+    "syllabus": "https://www.miun.se/utbildning/kursplaner-och-utbildningsplaner/DT057G/"
+  },
+  {
+    "code": "dt084g",
+    "coursename": "Introduktion till programmering i JavaScript",
+    "translatedName": "Introduction to Programming in JavaScript",
+    "progression": "A",
+    "syllabus": "https://www.miun.se/utbildning/kursplaner-och-utbildningsplaner/DT084G/"
+  },
+  {
+    "code": "dt200g",
+    "coursename": "Grafisk teknik för webb",
+    "translatedName": "Graphic Techniques for the Web",
+    "progression": "A",
+    "syllabus": "https://www.miun.se/utbildning/kursplaner-och-utbildningsplaner/DT200G/"
+  },
+  {
+    "code": "dt068g",
+    "coursename": "Webbanvändbarhet",
+    "translatedName": "Web Usability",
+    "progression": "B",
+    "syllabus": "https://www.miun.se/utbildning/kursplaner-och-utbildningsplaner/DT068G/"
+  },
+  {
+    "code": "dt003g",
+    "coursename": "Databaser",
+    "translatedName": "Databases",
+    "progression": "A",
+    "syllabus": "https://www.miun.se/utbildning/kursplaner-och-utbildningsplaner/DT003G/"
+  },
+  {
+    "code": "dt211g",
+    "coursename": "Frontend-baserad webbutveckling",
+    "translatedName": "Frontend-Based Web Development",
+    "progression": "B",
+    "syllabus": "https://www.miun.se/utbildning/kursplaner-och-utbildningsplaner/DT211G/"
+  },
+  {
+    "code": "dt207g",
+    "coursename": "Backend-baserad webbutveckling",
+    "translatedName": "Backend-Based Web Development",
+    "progression": "B",
+    "syllabus": "https://www.miun.se/utbildning/kursplaner-och-utbildningsplaner/DT207G/"
+  },
+  {
+    "code": "dt208g",
+    "coursename": "Programmering i TypeScript",
+    "translatedName": "Programming in TypeScript",
+    "progression": "B",
+    "syllabus": "https://www.miun.se/utbildning/kursplaner-och-utbildningsplaner/DT208G/"
+  },
+  {
+    "code": "ik060g",
+    "coursename": "Projektledning",
+    "translatedName": "Project Management",
+    "progression": "B",
+    "syllabus": "https://www.miun.se/utbildning/kursplaner-och-utbildningsplaner/IK060G/"
+  },
+  {
+    "code": "dt071g",
+    "coursename": "Programmering i C#.net",
+    "translatedName": "Programming in C#.NET",
+    "progression": "A",
+    "syllabus": "https://www.miun.se/utbildning/kursplaner-och-utbildningsplaner/DT071G/"
+  },
+  {
+    "code": "dt193g",
+    "coursename": "Fullstacks-utveckling med ramverk",
+    "translatedName": "Full-Stack Development with Frameworks",
+    "progression": "B",
+    "syllabus": "https://www.miun.se/utbildning/kursplaner-och-utbildningsplaner/DT193G/"
+  },
+  {
+    "code": "dt209g",
+    "coursename": "Webbutveckling för WordPress",
+    "translatedName": "Web Development for WordPress",
+    "progression": "B",
+    "syllabus": "https://www.miun.se/utbildning/kursplaner-och-utbildningsplaner/DT209G/"
+  },
+  {
+    "code": "dt191g",
+    "coursename": "Webbutveckling med .NET",
+    "translatedName": "Web Development with .NET",
+    "progression": "B",
+    "syllabus": "https://www.miun.se/utbildning/kursplaner-och-utbildningsplaner/DT191G/"
+  },
+  {
+    "code": "dt210g",
+    "coursename": "Fördjupad frontend-utveckling",
+    "translatedName": "Advanced Frontend Development",
+    "progression": "B",
+    "syllabus": "https://www.miun.se/utbildning/kursplaner-och-utbildningsplaner/DT210G/"
+  },
+  {
+    "code": "dt140g",
+    "coursename": "Självständigt arbete",
+    "translatedName": "Independent Project",
+    "progression": "B",
+    "syllabus": "https://www.miun.se/utbildning/kursplaner-och-utbildningsplaner/DT140G/"
+  }
 ]
