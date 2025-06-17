@@ -1,21 +1,17 @@
 <table>
   <thead>
     <tr>
-      <th (click)="setSort('code')">
+      <th (click)="setSort('code')" class="progression-header">
         <span class="wrap-heading">Code</span> {{ getSortIcon('code') }}
       </th>
-      <th (click)="setSort('coursename')">
+      <th (click)="setSort('coursename')" class="progression-header">
         <span class="wrap-heading">Course name</span> {{
         getSortIcon('coursename') }}
       </th>
-      <th class="full-name" (click)="setSort('progression')">
-        <span class="wrap-heading">Progres<wbr />sion</span> {{
-        getSortIcon('progression') }}
-      </th>
-
-      <th class="short-name" (click)="setSort('progression')">
-        <span class="wrap-heading">A/<wbr />B</span> {{
-        getSortIcon('progression') }}
+      <th (click)="setSort('progression')" class="progression-header">
+        <span class="full-name">Progres<wbr />sion</span>
+        <span class="short-name">A/<wbr />B</span>
+        {{ getSortIcon('progression') }}
       </th>
     </tr>
   </thead>
