@@ -25,6 +25,8 @@ Open Live Demo
 - Figma (for visual design and layout planning)
 
 ---
+<img src="https://github.com/user-attachments/assets/aefa6f43-764c-4fe2-bbbe-356d90458e28" alt="Part of app" width="auto"/> 
+<br>My Angular RxJS API Requests Lab
 
 ## Installation
 
@@ -35,7 +37,7 @@ ng serve
 
 ---
 
-## About This Project
+## More about This Project
 
 This is a frontend web application built with Angular that displays a structured list of academic courses.
 Each course entry includes its course code, name, progression level (A–C), and a link to the official syllabus.
