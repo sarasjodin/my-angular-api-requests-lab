@@ -1,59 +1,70 @@
-# MyAngularApiRequests
+# My Angular RxJS API Requests Lab
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.1.
+<a href="https://my-angular-api-requests-lab.netlify.app" target="_blank" rel="noopener noreferrer">
+Open Live Demo
+</a> <br><br>
 
-## Development server
+[![Netlify Status](https://api.netlify.com/api/v1/badges/bfca5d1e-6429-40bb-95cb-68a456063fe4/deploy-status)](https://app.netlify.com/projects/my-angular-api-requests-lab/deploys)
 
-To start a local development server, run:
+---
+
+## Features
+
+- ✅ Display of courses with code, name, progression level, and syllabus link  
+- ✅ Responsive layout for mobile and desktop views  
+- 🔍 Focus on modular Angular components, clean UI structure, and course-based content presentation
+
+---
+
+## Tech Stack
+
+- Angular / TypeScript  
+- HTML / CSS  
+- Local JSON data (for course info)  
+- Netlify (for deployment)  
+- Figma (for visual design and layout planning)
+
+---
+
+## Installation
 
 ```bash
+npm install
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+---
 
-## Code scaffolding
+## About This Project
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+This is a frontend web application built with Angular that displays a structured list of academic courses.
+Each course entry includes its course code, name, progression level (A–C), and a link to the official syllabus.
 
-```bash
-ng generate component component-name
-```
+The application is styled using custom CSS and is fully responsive, optimized for both desktop and mobile devices.
+Developed as part of a frontend development course, it functions as a digital CV or course portfolio, showcasing the developer’s academic background.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Course data is stored locally (or fetched via JSON) and rendered dynamically using Angular’s component-based architecture.
+The app is fully translated into English. If a course name changes in the future, the Swedish name will be displayed until a manual translation is added.
 
-```bash
-ng generate --help
-```
+---
 
-## Building
+## Folder Structure
 
-To build the project run:
+<img src="https://github.com/user-attachments/assets/08743511-a981-4613-85eb-bb55571e8b9f" alt="folder structure" width="150"/>
+Part of folder structure
 
-```bash
-ng build
-```
+---
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## Security
 
-## Running unit tests
+- ✅ Dependabot active
+- ✅ Security policy configured
+- ✅ Automatic CodeQL analysis
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+---
 
-```bash
-ng test
-```
+## License
 
-## Running end-to-end tests
+MIT – see LICENSE.md for details.
 
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+---
