@@ -1,5 +1,4 @@
 footer {
-  flex-direction: column;
   display: flex;
   align-items: center;
   text-align: center;
@@ -8,30 +7,12 @@ footer {
   justify-content: center;
   background-color: rgba(209, 218, 227, 0.1);
   width: 100vw;
-}
-
-.section {
-  background-color: rgba(66, 116, 163, 0.267);
-  font-size: medium;
-  width: 100vw;
-  border-top: 1px solid #ccc;
-}
-
-div.section {
-  width: 100vw;
+  flex-direction: column;
+  padding: 1.5rem;
 }
 
 .copyright {
   font-weight: 650;
-}
-
-.footer {
-  flex-direction: row;
-  display: flex;
-  align-items: center;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
 }
 
 div.footer > img {

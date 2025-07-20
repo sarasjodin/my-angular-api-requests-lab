@@ -1,47 +1,46 @@
 <div class="about-page">
-  <h2>About this site</h2>
-  <p>
-    This site is part of a frontend development lab focused on Angular 20, RxJS,
-    and working with external data sources.
-  </p>
-  <p>
-    The application fetches a course schedule from an external API. If the
-    remote source is unavailable, it automatically falls back to a local JSON
-    file stored in the public folder. Course names are translated via the local
-    JSON to improve accessibility for international users.
-  </p>
-  <p>It demonstrates several core Angular concepts including:</p>
-  <ul>
-    <li>Standalone components</li>
-    <li>HTTP requests using HttpClient with RxJS</li>
-    <li>Data binding with classic Angular techniques</li>
-    <li>Filtering and sorting in real-time</li>
-    <li>Responsive table layout with accessibility in mind</li>
-  </ul>
-  <p>
-    The table view allows users to search for courses by name or code, sort by
-    any column (ascending, descending, or reset), and view syllabus links for
-    each course.
-  </p>
-  <p>
-    The project is fully version-controlled with Git, hosted on GitHub, and
-    published on a public web host. Styling is done using SCSS at both component
-    and global levels.
-  </p>
-
+  <section>
+    <h2>About this site</h2>
+    <p>
+      This site is part of a frontend development lab focused on Angular 20,
+      RxJS, and working with external data sources.
+    </p>
+    <p>
+      The application fetches a course schedule from an external API. If the
+      remote source is unavailable, it automatically falls back to a local JSON
+      file stored in the public folder. Course names are translated via the
+      local JSON to improve accessibility for international users.
+    </p>
+    <p>It demonstrates several core Angular concepts including:</p>
+    <ul>
+      <li>Standalone components</li>
+      <li>HTTP requests using HttpClient with RxJS</li>
+      <li>Data binding with classic Angular techniques</li>
+      <li>Filtering and sorting in real-time</li>
+      <li>Responsive table layout with accessibility in mind</li>
+    </ul>
+    <p>
+      The table view allows users to search for courses by name or code, sort by
+      any column (ascending, descending, or reset), and view syllabus links for
+      each course.
+    </p>
+    <p>
+      The project is fully version-controlled with Git, hosted on GitHub, and
+      published on a public web host. Styling is done using SCSS at both
+      component and global levels.
+    </p>
+  </section>
   <div class="image-wrapper">
     <div class="img-container">
       <picture>
         <!-- AVIF -->
         <source srcset="/images/sara.avif" type="image/avif" />
-
         <!-- WebP -->
         <source srcset="/images/sara.webp" type="image/webp" />
-
         <!-- Fallback: JPG -->
         <img
           src="/images/sara.jpg"
-          alt="A photo of the programmer sitting in a garden"
+          alt="Profile photo of the developer sitting in a garden"
           width="150"
           height="150"
           class="profile-pic"
@@ -49,22 +48,24 @@
       </picture>
     </div>
   </div>
-  <h2>About me</h2>
-  <p>
-    I'm a developer with a long-time interest in modern fullstack web
-    development. This project gave me hands-on experience with Angular’s
-    reactive data flow, real-time data binding, and error-handling strategies
-    with RxJS.
-  </p>
-  <p>
-    I also explored standalone component architecture, service-based API
-    integration, and fallback logic. The implementation of sorting and filtering
-    on live data helped reinforce my understanding of state management within
-    Angular applications.
-  </p>
-  <p>
-    Through this lab, I gained deeper insight into building maintainable and
-    user-friendly interfaces while keeping performance and responsiveness in
-    mind.
-  </p>
+  <section>
+    <h2>About me</h2>
+    <p>
+      I'm a developer with a long-time interest in modern fullstack web
+      development. This project gave me hands-on experience with Angular’s
+      reactive data flow, real-time data binding, and error-handling strategies
+      with RxJS.
+    </p>
+    <p>
+      I also explored standalone component architecture, service-based API
+      integration, and fallback logic. The implementation of sorting and
+      filtering on live data helped reinforce my understanding of state
+      management within Angular applications.
+    </p>
+    <p>
+      Through this lab, I gained deeper insight into building maintainable and
+      user-friendly interfaces while keeping performance and responsiveness in
+      mind.
+    </p>
+  </section>
 </div>
