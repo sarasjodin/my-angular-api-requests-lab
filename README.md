@@ -52,7 +52,7 @@ The app is fully translated into English. If a course name changes in the future
 
 ## Folder Structure
 
-<img src="https://github.com/user-attachments/assets/08743511-a981-4613-85eb-bb55571e8b9f" alt="folder structure" width="150"/>
+<img src="https://github.com/user-attachments/assets/7018ea46-7e47-455c-b7c8-12ff9bfe291f" alt="folder structure" width="150"/>
 Part of folder structure
 
 ---
