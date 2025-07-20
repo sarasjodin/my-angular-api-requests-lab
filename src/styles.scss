@@ -25,14 +25,8 @@ app-root {
   width: 100%;
   box-sizing: border-box;
   flex-direction: column;
-}
-
-app-root {
   max-width: 900px;
-  width: 100%;
   margin: 0 auto;
-  padding: 0 2rem;
-  box-sizing: border-box;
 }
 
 main {
@@ -41,6 +35,8 @@ main {
   background-color: white;
   max-width: 900px;
   margin: 0 auto;
+  height: 100vw;
+  min-width: 100%;
 }
 
 .button-row {
