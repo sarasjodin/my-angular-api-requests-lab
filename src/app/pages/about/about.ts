@@ -5,6 +5,6 @@ import { Component } from '@angular/core';
   selector: 'app-about',
   imports: [],
   templateUrl: './about.html',
-  styleUrls: ['./about.css'],
+  styleUrls: ['./about.scss'],
 })
 export class About {}

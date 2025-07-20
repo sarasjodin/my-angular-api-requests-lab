@@ -6,6 +6,6 @@ import { RouterModule } from '@angular/router';
   selector: 'app-navbar',
   imports: [RouterModule],
   templateUrl: './navbar.html',
-  styleUrls: ['./navbar.css'],
+  styleUrls: ['./navbar.scss'],
 })
 export class Navbar {}

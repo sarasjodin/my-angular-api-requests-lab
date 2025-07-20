@@ -12,7 +12,11 @@ nav {
   padding: 1rem;
   gap: 1rem;
   width: 100vw;
-  max-width: 600px;
+}
+
+.main-nav {
+  background-color: rgba(209, 218, 227, 0.1);
+  width: 100vw;
 }
 
 .full-name {
@@ -109,11 +113,8 @@ nav {
     justify-content: center;
     padding: 1rem;
     width: 100%;
-    max-width: 600px;
   }
-  .main-nav {
-    width: 600px;
-  }
+
   .full-name {
     display: none;
   }
@@ -124,13 +125,7 @@ nav {
 @media screen and (min-width: 650px) {
   nav {
     display: flex;
-    width: 600px;
-    max-width: 600px;
     border-top: 1px solid #eee;
-  }
-
-  .main-nav {
-    width: 600px;
   }
 
   .full-name {

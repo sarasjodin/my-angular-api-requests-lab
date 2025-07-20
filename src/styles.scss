@@ -10,26 +10,37 @@
 html,
 body {
   height: 100%;
+  width: 100%;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  box-sizing: border-box;
+  background-color: rgba(209, 218, 227, 0.13);
 }
 
 app-root {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
   flex-direction: column;
-  min-height: 100vh;
-  min-width: 100vw;
+}
+
+app-root {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+  box-sizing: border-box;
 }
 
 main {
-  width: 100%;
-  min-height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  box-sizing: inherit;
-  position: relative;
+  padding: 1rem;
+  box-sizing: border-box;
+  background-color: white;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .button-row {
@@ -173,6 +184,11 @@ header {
   }
 }
 
-/* * {
-    outline: 1px solid red;
-  } */
+@media (max-width: 900px) {
+  app-root {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+}

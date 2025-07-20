@@ -1,24 +1,24 @@
-div.about-page {
-  margin: 0 1rem;
-}
-
 .about-page {
   max-width: 650px;
+  margin: 0 auto;
+  padding: 2rem;
+  box-sizing: border-box;
 }
 
 .image-wrapper {
   display: flex;
-  justify-content: flex-end;
-  margin: 0 1rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
 }
 
 .img-container {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
   border-radius: 50%;
   width: 150px;
   height: 150px;
-  border-radius: 50%;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
@@ -38,9 +38,17 @@ div.about-page {
 p {
   line-height: 1.6;
   font-size: larger;
+  text-align: justify;
+  margin-bottom: 1.5rem;
 }
 
 ul li {
   line-height: 1.4;
   font-size: larger;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
 }

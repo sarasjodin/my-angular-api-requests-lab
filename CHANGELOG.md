@@ -12,6 +12,20 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ---
 
+## [1.0.1] 2025-07-20
+
+### Added
+- Mobile-first styling applied for **`app-root`**, ensuring content adapts well to smaller screens.
+- Implemented **flexbox layout** for centering content and improving responsiveness.
+- Added media queries to handle layout changes for tablet and desktop views.
+- Improved styling for the **`about-page`** to center content and ensure consistent spacing across all screen sizes.
+
+### Changed
+- Refined **`table`** styling for better layout across mobile and larger screens, including better centering and max-width constraints.
+- Adjusted **`max-width`** and **`box-sizing`** to ensure content stays within container limits and is properly aligned.
+
+---
+
 ## [1.0.0] 2025-07-20
 
 ### Added
